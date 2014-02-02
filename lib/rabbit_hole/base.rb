@@ -32,6 +32,12 @@ module RabbitHole
       end
     end
 
+    def tasks
+      with_stack do |stack|
+        stack
+      end
+    end
+
     private
 
     def with_stack
