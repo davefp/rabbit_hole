@@ -22,9 +22,15 @@ module RabbitHole
       puts "Next task: '#{stack.top}'"
     end
 
-    desc "list", "List all tasks in the stack"
-    def list
-      puts "TODO"
+    desc "show", "Show all tasks in the stack"
+    def show
+      stack = Base.new
+      tasks = stack.tasks
+      puts "#{tasks.size} levels deep"
+      puts "Current task: #{tasks.last}"
+      tasks[0...-1].each do |task|
+        puts task
+      end
     end
   end
 end
