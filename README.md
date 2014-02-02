@@ -1,20 +1,10 @@
-# TaskStack
+# RabbitHole
 
 TODO: Write a gem description
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'task_stack'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install task_stack
+    $ gem install rabbit_hole
 
 ## Usage
 

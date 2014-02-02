@@ -1,12 +1,12 @@
 require 'spec_helper'
-describe TaskStack do
+describe RabbitHole do
 
   before do
 
-    yml_path = "#{Dir.home}/.task_stack_test.yml"
+    yml_path = "#{Dir.home}/.rabbit_hole_test.yml"
 
     File.open(yml_path, "w") {|f| YAML.dump([], f)}
-    @task_stack = TaskStack::Base.new(yml_path)
+    @task_stack = RabbitHole::Base.new(yml_path)
   end
 
   context "add task" do

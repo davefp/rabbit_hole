@@ -1,7 +1,6 @@
-#!/usr/bin/env ruby
 require "thor"
 
-module TaskStack
+module RabbitHole
   class CLI < Thor
     desc "add TASK", "Adds TASK to the top of the stack"
     def add(task)

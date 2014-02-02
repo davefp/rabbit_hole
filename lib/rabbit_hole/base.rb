@@ -1,10 +1,10 @@
 require "yaml"
 
-module TaskStack
+module RabbitHole
 
   class Base
 
-    def initialize(yml_path = "#{Dir.home}/.task_stack.yml")
+    def initialize(yml_path = "#{Dir.home}/.rabbit_hole.yml")
       @yml_path = yml_path
     end
 
@@ -23,6 +23,12 @@ module TaskStack
     def top
       with_stack do |stack|
         stack.last
+      end
+    end
+
+    def size
+      with_stack do |stack|
+        stack.size
       end
     end
 
