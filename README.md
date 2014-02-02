@@ -1,6 +1,12 @@
 # RabbitHole
 
-TODO: Write a gem description
+Ever have one of those situations where every task seems to spawn another one, and another one, and another one?
+
+Eventually you forget where you started and end up lost in a mess of documentation, source code, and config files.
+
+A rabbit hole.
+
+Use this gem to find your way back out again. Add each new task as you start it, and RabbitHole will keep track of your task stack for you. When you finish a task, tell RabbitHole and it'll remind you what you were working on before. Keep going til you get back to your starting point.
 
 ## Installation
 
@@ -24,9 +30,17 @@ Remind yourself how deep you are:
 
     $ rabbithole show
 
-Note that all commands can be abbreviated as long as they're unambiguous.
+### Abbreviations
+
+All commands can be abbreviated as long as they're unambiguous.
 
 e.g. `rabbithole s` maps to `rabbithole show`.
+
+### Aliases
+
+I recommend adding an alias to your shell as typing 'rabbithole' all the time is cumbersome.
+
+I use `alias rh="rabbithole"`.
 
 ## Contributing
 
